@@ -13,10 +13,12 @@ body {
 
 header {
   background-color: var(--primary-color);
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
   padding: 1rem;
+  gap: 1rem;
+  color: var(--secondary-color);
 }
 
 header img {
@@ -78,15 +80,46 @@ main section img {
   margin: 0.5rem;
 }
 
+.adventure {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.adventure figure {
+  width: 150px;
+  margin: 0;
+  text-align: center;
+}
+
+.adventure img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.adventure figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--dark-color);
+}
+
 footer {
   background-color: var(--dark-color);
   color: white;
-  text-align: center;
   padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer .socials {
+  display: flex;
+  gap: 10px;
 }
 
 footer a img {
   width: 30px;
-  margin: 0 10px;
-  text-decoration: none;
 }
