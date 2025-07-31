@@ -25,11 +25,10 @@ header img {
   height: 50px;
 }
 
-nav a {
-  color: white;
-  margin-left: 1rem;
-  text-decoration: none;
-  font-weight: bold;
+nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
 }
 
 .hero {
@@ -55,11 +54,13 @@ nav a {
   position: absolute;
   bottom: 10%;
   left: 5%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   color: white;
   padding: 1rem;
+  border-radius: 8px;
   max-width: 300px;
 }
+
 
 .hero article img {
   float: right;
@@ -76,8 +77,10 @@ main section h2 {
 }
 
 main section img {
-  width: 150px;
-  margin: 0.5rem;
+  width: 100%;
+  max-width: 150px;
+  margin: 0.5rem auto;
+  display: block;
 }
 
 .adventure {
