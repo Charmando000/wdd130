@@ -268,7 +268,7 @@ footer a img {
 .contact-form input[type="text"],
 .contact-form input[type="email"],
 .contact-form textarea {
-  width: 100%;
+  width: 100%;  
   padding: 0.5rem;
   border: 1px solid #b0c4de;
   border-radius: 5px;
@@ -276,3 +276,7 @@ footer a img {
   margin-bottom: 1rem;
   box-sizing: border-box;
 }
+
+.employee-img {
+    width: 150px;
+  }
