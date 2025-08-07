@@ -31,6 +31,37 @@ nav {
   gap: 1rem;
 }
 
+.newsletter {
+  text-align: center;
+  background-color: #f4f4f4;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.newsletter h2 {
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.newsletter input[type="email"] {
+  padding: 0.5rem;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.newsletter button {
+  padding: 0.5rem 1rem;
+  background-color: var(--primary-color); /* o tu color personalizado */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
 .hero {
   position: relative;
 }
@@ -279,4 +310,26 @@ footer a img {
 
 .employee-img {
     width: 150px;
-  }
+}
+
+
+.trip-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.trip img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0077cc;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
