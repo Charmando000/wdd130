@@ -1,10 +1,10 @@
 :root {
-  --primary-color: #1e90ff;
+   --primary-color: #1e90ff;
   --secondary-color: #ffffff;
   --accent-color: #ff5733;
-  --dark-color: #333333;
+  --dark-color: #222222;
   --light-gray: #f4f4f4;
-  --text-color: #222;
+  --text-color: #222222;
   --border-radius: 6px;
   --font-family-sans: 'Roboto', sans-serif;
   --font-family-fancy: 'Pacifico', cursive;

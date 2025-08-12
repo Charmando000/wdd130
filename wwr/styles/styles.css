@@ -1,0 +1,251 @@
+/* Variables de color y fuente */
+:root {
+  --primary-color: #1e90ff;
+  --accent-color: #ff5733;
+  --light-gray: #f4f4f4;
+  --dark-color: #222222;
+  --border-radius: 10px;
+  --font-family-main: 'Roboto', Arial, sans-serif;
+}
+
+/* Reset básico */
+body, h1, h2, h3, h4, h5, h6, p, ul {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family-main);
+}
+
+body {
+  background: #fff;
+  color: var(--dark-color);
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 1rem 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 2rem;
+}
+
+header .logo img {
+  height: 50px;
+}
+
+header .logo h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2rem;
+  margin: 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 0.5rem;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+header nav a:hover,
+header nav a:focus {
+  color: var(--accent-color);
+  outline: none;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  max-height: 400px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.hero-img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  background: rgba(30, 144, 255, 0.85); /* azul con opacidad para contraste */
+  color: #fff;
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  max-width: 400px;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 1rem;
+  background: var(--accent-color);
+  color: #fff;
+  padding: 0.75em 2em;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.cta-button:hover,
+.cta-button:focus {
+  background: #e14a20;
+}
+
+/* Grid Layout */
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.grid section, .grid aside {
+  background: var(--light-gray);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.grid img {
+  width: 100%;
+  border-radius: var(--border-radius);
+  margin-bottom: 1rem;
+}
+
+/* Newsletter */
+.newsletter {
+  background: var(--light-gray);
+  padding: 2rem 1rem;
+  max-width: 400px;
+  margin: 2rem auto 3rem auto;
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.newsletter h2 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.newsletter label {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.newsletter input[type="text"],
+.newsletter input[type="email"] {
+  padding: 0.5rem;
+  border: 1px solid #b0c4de;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.newsletter button[type="submit"] {
+  background: var(--primary-color);
+  color: #fff;
+  padding: 0.75em 2em;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.newsletter button[type="submit"]:hover,
+.newsletter button[type="submit"]:focus {
+  background: #005fa3;
+}
+
+/* Footer */
+footer {
+  background: var(--primary-color);
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 0 1rem 0;
+  margin-top: 2rem;
+  position: relative;
+}
+
+footer .socials {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+footer .socials a img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Enlaces */
+a {
+  color: var(--primary-color);
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+a:hover, a:focus {
+  color: var(--accent-color);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .hero-text {
+    left: 5%;
+    right: 5%;
+    max-width: 90%;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  header .logo {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 1rem;
+  }
+  .hero-img {
+    height: 200px;
+  }
+  .newsletter {
+    padding: 1rem;
+  }
+}
